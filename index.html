@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Mastermind</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="container">
+			<h1>Mastermind</h1>
+			<div class="gamingOptions">
+				<h2>Gaming Options</h2>
+				<ul>
+					<li>
+						<label for="comboLength">Length of combination</label>
+						<input type="number" name="comboLength" id="comboLength" value="4" max="6" min="2"/>
+					</li>
+					<li>
+						<label for="nbChoices">Number of colors</label>
+						<input type="number" name="nbChoices" id="nbChoices" value="4" max="8" min="2" />
+					</li>
+				</ul>
+				<button class="playButton" onclick="startGame()"><span>Play</span></button>
+			</div>
+
+			<div class="solutionPart spoilerMode off">
+			</div>
+
+			<div class="board">
+				<div class="newGuess">
+				</div>
+				<div class="oldGuesses">
+				</div>
+			</div>
+			<ul class="colorsList"></ul>
+		</div>
+		<script src="//code.jquery.com/jquery-1.11.3.js"></script>
+		<script src="global.js"></script>
+	</body>
+</html>

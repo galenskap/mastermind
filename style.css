@@ -1,0 +1,123 @@
+/* General */
+.container
+{
+	min-width: 350px;
+	max-width: 350px;
+	width: 100%;
+	margin: auto;
+	padding: 10px;
+}
+input, button { cursor: pointer; }
+
+
+/* Header */
+.gamingOptions
+{
+	background: beige;
+	padding: 10px;
+}
+.gamingOptions ul
+{
+	list-style-type: none;
+	padding: 0;
+}
+.gamingOptions li
+{
+	margin: 0 0 10px;
+}
+.gamingOptions input
+{
+	width: 30px;
+	padding: 8px;
+	display: block;
+}
+.solutionPart.spoilerMode
+{
+	display: none;
+}
+.solutionPart.spoilerMode.on
+{
+	display: block;
+	font-size: 10px;
+	color: #777;
+}
+
+
+/* Board */
+.newGuess
+{
+	background: #555;
+}
+.newGuess .case
+{
+    width: 30px;
+	height: 30px;
+	text-align: center;
+	margin: 6px;
+	padding: 0px;
+	border-radius: 50%;
+	border: 2px solid #FFF;
+}
+
+
+/* History */
+.guessItem
+{
+	clear: both;
+}
+.guessItem .combo
+{
+	list-style-type: none;
+	float: left;
+	padding: 0;
+	margin: 4px 0;
+}
+.guessItem .combo li
+{
+	border-radius: 50%;
+	display: inline-block;
+	font-size:0px;
+	width: 40px;
+	height: 40px;
+	margin: 2px;
+}
+.guessItem .answer
+{
+	padding: 20px 0 0;
+	text-align: right;
+	margin: 0;
+	line-height: 0;
+	width: 60px;
+	float: right;
+}
+.guessItem .answer .blacks, .guessItem .answer .whites
+{
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	display: inline-block;
+	font-size:0px;
+	margin: 2px;
+}
+
+
+/* Colors choices */
+.colorsList
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+/* Colors (no sass... y u crazy?) */
+.red {background-color:#E61D26; color:transparent; border: 1px solid #E61D26;}
+.blue {background-color:#3572CF; color:transparent; border: 1px solid #3572CF;}
+.yellow {background-color:#E9EE36; color:transparent; border: 1px solid #E9EE36;}
+.black, .blacks {background-color:#222; color:transparent; border: 1px solid #222;}
+.green {background-color:#57D023; color:transparent; border: 1px solid #57D023;}
+.orange {background-color:#EE6215; color:transparent; border: 1px solid #EE6215;}
+.violet {background-color:#692795; color:transparent; border: 1px solid #692795;}
+.white, .whites {background-color:#FFF; color:transparent; border: 1px solid #AAA;}
