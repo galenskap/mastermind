@@ -1,3 +1,6 @@
+// Set this to true for debug mode (shows the solution):
+var spoilerMode = false;
+
 // Color definition
 function whatColorIsThis(number)
 {
@@ -49,6 +52,11 @@ function createCombo(comboLength, nbChoices)
 // Game initialization
 function startGame()
 {
+    if(spoilerMode)
+  	{
+        $(".solutionPart.spoilerMode").addClass('on');
+    }
+
     // 0 : Erase everything from the previous play
     $(".board .newGuess").empty();
     $(".board .oldGuesses").empty();
